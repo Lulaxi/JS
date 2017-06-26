@@ -24,7 +24,7 @@ Ext.define('AM.view.Viewport',{
         },{
             title: 'Center Region',
             region: 'center',     // center region is required, no width/height specified
-            xtype: 'panel',
+            xtype: 'centertab',
             layout: 'fit',
             margins: '5 5 0 0'
         },{
