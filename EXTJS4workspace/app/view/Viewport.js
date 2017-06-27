@@ -19,7 +19,6 @@ Ext.define('AM.view.Viewport',{
             margins: '5 0 0 5',
             width: 200,
             collapsible: true,   // make collapsible
-            id: 'west-region-container',
             layout: 'fit'
         },{
             title: 'Center Region',

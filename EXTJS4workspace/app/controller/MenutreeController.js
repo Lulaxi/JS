@@ -1,6 +1,6 @@
 Ext.define('AM.controller.MenutreeController',{
     extend:'Ext.app.Controller',
-    stores:['Menutreestore'],
+    stores:['Menutreestore','Scorestore'],
     models:['MenutreeModel'],
     views:['Viewport','west.MenutreeView','center.CentertabView','center.Homepage'],
 
