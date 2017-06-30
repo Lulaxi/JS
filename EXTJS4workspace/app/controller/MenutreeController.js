@@ -1,11 +1,17 @@
+
 Ext.define('AM.controller.MenutreeController',{
     extend:'Ext.app.Controller',
-    stores:['Menutreestore','Scorestore'],
+    //requires:['AM.other.CenterpanelFactory'],
+    stores:['Menutreestore','Scorestore','Coursestore'],
     models:['MenutreeModel'],
     views:['Viewport','west.MenutreeView','center.CentertabView','center.Homepage'],
-
+    config:{
+        //factory: Ext.create('AM.other.CenterpanelFactory')
+        factory:null
+    },
 
     init:function() {
+
         this.control({
             'menutreeview': {
                 itemclick: this.clickfunctioncom,
@@ -13,39 +19,30 @@ Ext.define('AM.controller.MenutreeController',{
 
         });
     },
-
     clickfunctioncom:function(view,rec,item,index,e,eopts){
 
-        var title = rec.get('text');
-        var activepanel = Ext.create('Ext.panel.Panel',{
-            title:title,
-            closable: true
-        });
+        var components = Ext.ComponentQuery.query('centertab');
 
-        var centertabcome = Ext.ComponentQuery.query('centertab');
-        var items = centertabcome[0];
+        var tabpanel = components[0];
+        //先查询存不存在
+        var n = tabpanel.getComponent(rec.raw.id);
+        //根据查询结果决定添不添加
+        if (!n){
+        tabpanel.add(this.getFactory().createpanel(rec.raw.id,rec.raw.text));
+        };
+        tabpanel.setActiveTab(rec.raw.id);
 
-        var panelcurrent =  items.items;
+        console.log(n);
 
+    },
 
-        var result = panelcurrent.findBy(function(theitem,index){
+    getFactory:function(){
+        if(this.factory==null){
 
-            return (theitem.title ===title);
-        });
-
-        if(result===null){
-
-            items.add(activepanel);
-
-        }else{
-
-            items.setActiveTab(result);
+          this.factory = Ext.create('AM.other.CenterpanelFactory');
         }
 
-        items.setActiveTab(activepanel);
-
-        console.log('出来了............');
-
+    return this.factory;
     }
 
 });

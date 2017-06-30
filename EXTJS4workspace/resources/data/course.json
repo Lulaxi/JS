@@ -1,0 +1,91 @@
+
+[
+  {
+    "courseid":1,
+    "name": "门神"
+  },
+  {
+    "courseid":2,
+    "name": "神将"
+  },
+  {
+    "courseid":3,
+    "name": "洞察"
+  },
+  {
+    "courseid":4,
+    "name": "神算"
+  },
+  {
+    "courseid":5,
+    "name": "反计"
+  },
+  {
+    "courseid":6,
+    "name": "骑神"
+  },
+  {
+    "courseid":7,
+    "name": "弓神"
+  },
+  {
+    "courseid":8,
+    "name": "虚实"
+  },
+  {
+    "courseid":9,
+    "name": "遗计"
+  },
+  {
+    "courseid":10,
+    "name": "突袭"
+  },
+  {
+    "courseid":11,
+    "name": "金刚"
+  },
+  {
+    "courseid":12,
+    "name": "狂骨"
+  },
+  {
+    "courseid":13,
+    "name": "火神"
+  },
+  {
+    "courseid":14,
+    "name": "富豪"
+  },
+  {
+    "courseid":15,
+    "name": "连营"
+  },
+  {
+    "courseid":16,
+    "name": "固政"
+  },
+  {
+    "courseid":17,
+    "name": "水神"
+  },
+  {
+    "courseid":21,
+    "name": "威风"
+  },
+  {
+    "courseid":18,
+    "name": "天义"
+  },
+  {
+    "courseid":1,
+    "name": "制衡"
+  },
+  {
+    "courseid":19,
+    "name": "仁德"
+  },
+  {
+    "courseid":20,
+    "name": "勇将"
+  }
+]

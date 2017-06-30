@@ -1,25 +1,31 @@
 {
+   "id":"root",
   "expanded": true,
   "children": [
     {
+      "id":"detention",
       "text": "detention",
       "leaf": true
     },
     {
+      "id": "homework",
       "text": "homework",
       "expanded": true,
       "children": [
         {
+          "id":"book report",
           "text": "book report",
           "leaf": true
         },
         {
+          "id":"algebra",
           "text": "algebra",
           "leaf": true
         }
       ]
     },
     {
+      "id":"buy lottery tickets",
       "text": "buy lottery tickets",
       "leaf": true
     }

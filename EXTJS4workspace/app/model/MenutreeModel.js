@@ -1,6 +1,7 @@
 Ext.define('AM.model.MenutreeModel',{
     extend:'Ext.data.Model',
     fields:[
+        {name:'id',type:'string'},
         {name:'expanded',type:'bool'},
         {name:'text',type:'string'},
         {name:'left',type:'bool'}

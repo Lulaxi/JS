@@ -13,6 +13,4 @@ Ext.define('AM.store.Scorestore',{
         }
 
     }
-
-
 });
