@@ -2,7 +2,7 @@
 Ext.define('AM.controller.MenutreeController',{
     extend:'Ext.app.Controller',
     //requires:['AM.other.CenterpanelFactory'],
-    stores:['Menutreestore','Scorestore','Coursestore'],
+    stores:['Menutreestore','Scorestore'],
     models:['MenutreeModel'],
     views:['Viewport','west.MenutreeView','center.CentertabView','center.Homepage'],
     config:{
